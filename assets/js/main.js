@@ -1,0 +1,25 @@
+      $('.dropdown').hover(
+      function() {
+        if (document.documentElement.clientWidth > 768) {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+        }
+      }, 
+      function() {
+
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+       }
+      
+    );
+
+    $('.dropdown-menu').hover(
+      function() {
+        if (document.documentElement.clientWidth > 768) {
+        $(this).stop(true, true);
+         }
+      },
+      function() {
+        $(this).stop(true, true).delay(200).fadeOut();
+      }
+    );
+
+    
